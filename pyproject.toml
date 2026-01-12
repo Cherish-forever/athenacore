@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "athenacore"
+description = "Amaranth base 32-bit RISC-V soft processor"
+authors = [{name = "Cherish", email = "851153978@qq.com"}]
+license = {file = "LICENSE.txt"}
+version = "0.0.1"
+
+[tool.setuptools.packages.find]
+where = ["athenacore"]
+
+[tool.setuptools.package-dir]
+"" = "athenacore"
