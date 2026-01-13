@@ -7,6 +7,7 @@ dut = Adder()
 
 async def adder_testbench(ctx):
     cases = [
+        # x_src1     x_src2      d_sub  x_result
         (0x7fffffff, 0x00000001, False, 0x80000000),
         (0x80000000, 0x00000001, True,  0x7fffffff),
         (0x00000000, 0x00000000, False, 0x00000000),
